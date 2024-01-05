@@ -2,26 +2,90 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
+@layer components{
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
-
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+    #search-bar{
+        @apply  rounded-[16pt] bg-lightdark p-2
+         min-w-[60vw] 
+    }
+    .back-button{
+        @apply absolute top-0 left-0 ml-6
+        mt-5
+    }
+    .bg-home{
+        @apply  px-4 pt-14 pb-24 bg-dark min-h-screen
+    }
+    .header-container{
+        @apply  flex justify-between py-5 
+        fixed top-0 left-0 w-full px-4 bg-dark 
+    }
+    .kategori{
+        @apply flex w-full justify-center mt-7 pb-4
+        bg-dark
+    }
+    .kategori > *{
+        @apply mx-2
+    }
+    .tagcard{
+        @apply w-fit px-4 py-2 rounded-md   
+        text-white bg-dark
+    }
+    .tagcard:hover{
+        @apply bg-primary  
+    }
+    .content-image {
+        @apply rounded-md mb-4 w-full
+    }
+    .content-grid{
+        @apply grid grid-cols-2 gap-4
+    }
+    .content-container{
+        @apply grid-cols-1 gap-4
+    }
+    .bottomnav-container{
+        @apply bg-dark w-screen fixed bottom-0
+        h-14 flex flex-row justify-around px-4 items-start
+        shadow-footer
+    }
+    .ring-create{
+        @apply bg-primary p-2 -translate-y-8
+        rounded-3xl hover:rounded-sm transition-all 
+        duration-150 ease-in
+    }
+    .large-image{
+        @apply w-screen max-h-[50vh] object-cover
+        object-center rounded-[24px]
+    }
+    .profile-picture{
+        @apply rounded-full
+        object-center
+        object-cover 
+    }
+    .creator-info{
+        @apply flex flex-row justify-between 
+        items-center 
+    }
+    .button-small{
+        @apply text-white h-fit bg-primary 
+        py-2 px-3
+        rounded-lg text-[12px]
+    }
+    .content-title{
+        @apply text-white font-bold text-[16px]
+        mb-2
+    }
+    .content-description{
+        @apply text-gray-100 text-[12px]
+    }
+    .save-button{
+        @apply bg-dark w-[40px] h-[40px] rounded-full p-2
+        flex justify-center items-center -translate-y-12 absolute
+        right-7 
+    }
+    .user-metric{
+        @apply flex flex-row justify-evenly
+    }
+    /* .header-container>*{
+        @apply 
+    } */
 }

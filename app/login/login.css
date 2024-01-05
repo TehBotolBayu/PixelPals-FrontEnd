@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components{
+    .bg-login{
+        @apply bg-primary h-[100vh] p-11
+    }
+    .login{
+        @apply bg-white rounded-[26pt] m-auto h-full w-full
+        px-[39px] flex flex-col justify-evenly
+    }
+    .logo{
+        @apply w-full flex justify-center mb-12
+    }
+    .submit-button{
+        @apply text-white bg-secondary rounded-[14pt] px-10 
+        text-sm py-[10pt] w-full
+    }
+    #username{
+        @apply bg-[url('/user-logo.svg')] bg-no-repeat w-full
+        bg-left border-b border-gray-400 pl-4 py-[12px] mb-[20px]
+    }
+    #password{
+        @apply bg-[url('/pw-logo.svg')] bg-no-repeat w-full
+        bg-left border-b border-gray-400 pl-4 py-[12px] mb-[20px]
+    }
+}
