@@ -83,8 +83,23 @@
         right-7 
     }
     .user-metric{
-        @apply flex flex-row justify-evenly
+        @apply flex flex-row justify-evenly mb-5
     }
+    .content-nav-container{
+        @apply flex flex-row justify-around
+        items-center mb-5
+    }
+    .content-nav{
+        @apply  border-t-2 border-[#5F5F5F] h-[100%]
+        py-4 min-h-full w-full 
+    }
+    .content-nav-logo{
+        @apply h-7 w-7 mx-auto
+    }
+    
+    /* .content-nav{
+        @apply 
+    } */
     /* .header-container>*{
         @apply 
     } */

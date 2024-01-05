@@ -1,5 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
+import { BottomNav } from '@/components'
 
 function page() {
   return (
@@ -64,6 +65,7 @@ function page() {
             eius, labore suscipit, delectus illo saepe excepturi 
             vit ae ea?
         </p>
+        <BottomNav/>
     </div>
   )
 }

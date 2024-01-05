@@ -21,6 +21,7 @@ const config: Config = {
       },
       boxShadow: {
         'footer': '0 0px 20px 25px #121212',
+        'border': '0 5px 0 -1px #5F5F5F'
       },
     },
   },
